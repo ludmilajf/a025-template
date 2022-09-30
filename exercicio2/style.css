@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25vh);
+}
+
+section {
+    border: 1px solid lightcoral;
+}
+
+@media screen and (max-device-width : 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        /* ou:  */
+        /* grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr); */
+    }
+    section {
+        text-align: center;
+    }
+
+}
